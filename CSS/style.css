@@ -1,5 +1,7 @@
 body { 
     font-family: 'Readex Pro', sans-serif;
+    margin: 0;
+    overflow: hidden;
 }
 
 .header {
@@ -9,6 +11,7 @@ body {
     justify-content: space-between;
     border-bottom: 2px solid black;
     padding-bottom: 3px;
+    margin: 8px 8px 0;
 }
 
 .logo {
@@ -69,6 +72,8 @@ body {
     justify-content: space-between;
     max-height: 100vh;
     transition: 0.3s;
+    height: calc(100vh - 117px);
+    overflow-y: auto;
 }
 
 @media (min-width: 768px) {
@@ -81,6 +86,7 @@ body {
 .sidebarentry {
     width: 150px;
     animation: rotation 8s infinite linear;
+    animation-play-state: paused;
 }
 
 @keyframes rotation {
@@ -97,7 +103,7 @@ body {
 }
 
 .sidebarentry:hover {
-    animation-play-state: paused;
+    animation: rotation 8s infinite linear;
 }
 
 /* Landing Page */
@@ -110,9 +116,13 @@ body {
 }
 
 .article {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #A1C1AD;
     padding: 20px 40px;
+    overflow-y: auto;
+    height: calc(100vh - 157px);
 }
 
 .title {
@@ -165,7 +175,7 @@ body {
     width: 100%;
     background-color: #A1C1AD;
     padding: 5px 40px;
-    height: calc(82vh + 20px);
+    height: calc(100vh - 127px);
     overflow-y: scroll;
 }
 
