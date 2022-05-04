@@ -186,6 +186,7 @@ body {
     padding: 5px 40px;
     height: calc(100vh - 127px);
     overflow-y: scroll;
+    z-index: 0;
 }
 
 .angelaimagecontainer {
