@@ -5,10 +5,11 @@ function togglemenu() {
     const sidebarOpen = document.getElementsByClassName("sidebar open");
 
     if (sidebarOpen[0]) {
-        sidebar.style.display = "none";
+        sidebar.style['z-index'] = -1;
         sidebar.classList.remove('open');
     } else {
         sidebar.style.display = "flex";
+        sidebar.style['z-index'] = 0;
         sidebar.classList.add('open');
     }
 }
