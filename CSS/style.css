@@ -285,6 +285,7 @@ body {
 .about {
     background-color: #C4B399;
     position: relative;
+    z-index: 0;
 }
 
 .missionstatement {
