@@ -301,7 +301,13 @@ body {
 
 .missionstatement {
     position: relative;
-    width: 80%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .missionstatement {
+        width: 57%;
+    }
 }
 
 .missionstatementbackground {
