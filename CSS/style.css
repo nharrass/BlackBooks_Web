@@ -223,16 +223,22 @@ body {
 .angelaarticlecontainer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .angelaarticleleftcontainer {
     width: 100%;
 }
 
+.angelaarticleleftcontainer h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 
 @media (min-width: 768px) {
     .angelaarticleleftcontainer {
-        width: 60%;
+        width: 57%;
     }
 }
 
@@ -246,9 +252,13 @@ body {
     position: relative;
 }
 
+.angelaarticleleftcontainer .articletext {
+    white-space: normal;
+}
+
 .angelaarticleimagecontainer {
-    width: 0;
-    height: auto;
+    width: 40%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,6 +267,7 @@ body {
 @media (min-width: 768px) {
     .angelaarticleimagecontainer {
         width: 40%;
+        margin: auto;
     }
 }
 
